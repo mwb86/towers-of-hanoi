@@ -1,0 +1,140 @@
+.alltowers{
+  display:flex;
+}
+
+.tower1, .tower2, .tower3{
+  /*display:inline-block;;*/
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  /*justify-content: flex-start;*/
+  width: 225px;
+  height: 300px;
+  margin: 0px 20px;
+  position:relative;
+  border-bottom:solid brown 10px;
+  background: linear-gradient(to right,
+                              transparent 0%,
+                              transparent calc(50% - 2px),
+                              black calc(50% - 0.8px),
+                              black calc(50% + 0.8px),
+                              transparent calc(50% + 2px),
+                              transparent 100%);
+}
+
+#gamepiece0{
+  margin:0 auto;
+  background-color: black;
+  width:50px;
+  height:20px;
+  position:;
+  display:flex;
+  flex-direction: column;
+
+  justify-content:center;
+  vertical-align: middle;
+}
+
+#gamepiece1{
+  margin:0 auto;
+  background-color: blue;
+  width:75px;
+  height:20px;
+  position:;
+  display:flex;
+  flex-direction: column;
+
+  justify-content:center;
+  vertical-align: middle;
+}
+
+#gamepiece2{
+  margin:0 auto;
+  background-color: grey;
+  width:100px;
+  height:20px;
+  position:;
+  display:flex;
+  flex-direction: column;
+
+  justify-content:center;
+  vertical-align: middle;
+}
+
+#gamepiece3{
+  margin:0 auto;
+  background-color: green;
+  width:125px;
+  height:20px;
+  position:;
+  display:flex;
+  flex-direction: column;
+
+  justify-content:center;
+  vertical-align: middle;
+}
+
+#gamepiece4{
+  margin:0 auto;
+  background-color: yellow;
+  width:150px;
+  height:20px;
+  position:;
+  display:flex;
+  flex-direction: column;
+
+  justify-content:center;
+  vertical-align: middle;
+}
+
+#gamepiece5{
+  margin:0 auto;
+  background-color: purple;
+  width:175px;
+  height:20px;
+  position:;
+  display:flex;
+  flex-direction: column;
+
+  justify-content:center;
+  vertical-align: middle;
+}
+
+#gamepiece6{
+  margin:0 auto;
+  background-color: red;
+  width:200px;
+  height:20px;
+  position:;
+  display:flex;
+  flex-direction: column;
+
+  justify-content:center;
+  vertical-align: middle;
+}
+
+#gamepiece7{
+  margin:0 auto;
+  background-color: gold;
+  width:225px;
+  height:20px;
+  position:;
+  display:flex;
+  flex-direction: column;
+
+  justify-content:center;
+  vertical-align: middle;
+}
+
+
+/*
+span {
+  display:flex;
+
+  margin:10px 10px;
+
+  height:20px:
+  width:50px;
+  border:solid black 1px;
+
+}
