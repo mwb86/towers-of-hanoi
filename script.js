@@ -2,49 +2,92 @@ var tower1 = [1,2,3,4,5,6,7,8];
 var tower2 = [];
 var tower3 = [];
 
+drawTower1 = function (){
 for (var each in tower1){
-$('.tower1').append("<div id=gamepiece"+ each + "></div>");}
+$('.tower1').append("<div id=gamepiece"+ tower1[each] + "></div>");}
+};
+
 redotower2 = function(){
 for (var each in tower2){
-$('.tower2').append("<div id=gamepiece"+ each + "></div>");}
+$('.tower2').append("<div id=gamepiece"+ tower2[each] + "></div>");}
 };
+
 redotower3 = function(){
 for (var each in tower3){
-$('.tower3').append("<div id=gamepiece"+ each + "></div>");}
+$('.tower3').append("<div id=gamepiece"+ tower3[each] + "></div>");}
 };
-removelowestvalue = function(){
+
+drawTower1();
+
+let pieceinmotion = undefined;
+
+interactwithtower1 = function(){
+if(pieceinmotion === undefined){
+pieceinmotion = tower1.shift();
+/*$('#gamepiece0').remove();*/
+$(this).children().remove();
+}
+else if(pieceinmotion != undefined){
+  $('.tower1').empty();
+  tower1.unshift(pieceinmotion);
+  pieceinmotion=undefined;
+}
+drawTower1();
+};
+
+interactwithtower2 = function(){
+  if(pieceinmotion ==  undefined){
+  pieceinmotion = tower2.shift();
+  $(this).children().remove();
+  }
+  else if(pieceinmotion != undefined){
+    tower2.unshift(pieceinmotion);
+    pieceinmotion=undefined;
+    $(this).children().remove();
+  }
+redotower2();
+};
+
+interactwithtower3 = function(){
+  if(pieceinmotion ==  undefined){
+  pieceinmotion = tower3.shift();
+  $(this).children().remove();
+  }
+  else if(pieceinmotion != undefined){
+    tower3.unshift(pieceinmotion);
+    pieceinmotion=undefined;
+    $(this).children().remove();
+  }
+redotower3();
+};
+/*
+interactwithtower1 = function(){
   pieceinmotion=tower1[0];
-  /*towerpieceisfrom=this.tower;*/
   $('#gamepiece0').remove();
-  tower1.shift();};
-
-$('.tower1').on("click", removelowestvalue);
-
+  tower1.shift();
+};
 addstoredvalueto1 = function(){
   tower1.unshift(pieceinmotion);
-  piecinmotion=undefined;
+  pieceinmotion=undefined;
 };
 
-addstoredvalueto2 = function(){
-/*if(pieceinmotion<this.child[0]){
-tower2.unshift(pieceinmotion);
-pieceinmotion=undefined;
-}
-else{
-towerpieceisfrom.unshift(piecinmotion);
-}*/
+interactwithtower2 = function(){
   tower2.unshift(pieceinmotion);
-  pieceinmotion=undefined;
+  pieceinmotion=null;
   redotower2();
 };
-
-addstoredvalueto3 = function(){
+interactwithtower3 = function(){
   tower3.unshift(pieceinmotion);
   pieceinmotion=undefined;
-  redotower3();};
+  redotower3();
+};
 
-$('.tower2').on("click", addstoredvalueto2);
-$('.tower3').on("click", addstoredvalueto3);
+*/
+
+
+$('.tower1').on("click", interactwithtower1);
+$('.tower2').on("click", interactwithtower2);
+$('.tower3').on("click", interactwithtower3);
 
 while(tower2===[0,1,2,3,4,5,6,7]){
   console.log("You Won!");

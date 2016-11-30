@@ -22,7 +22,7 @@
                               transparent 100%);
 }
 
-#gamepiece0{
+#gamepiece1{
   margin:0 auto;
   background-color: black;
   width:50px;
@@ -35,7 +35,7 @@
   vertical-align: middle;
 }
 
-#gamepiece1{
+#gamepiece2{
   margin:0 auto;
   background-color: blue;
   width:75px;
@@ -48,7 +48,7 @@
   vertical-align: middle;
 }
 
-#gamepiece2{
+#gamepiece3{
   margin:0 auto;
   background-color: grey;
   width:100px;
@@ -61,7 +61,7 @@
   vertical-align: middle;
 }
 
-#gamepiece3{
+#gamepiece4{
   margin:0 auto;
   background-color: green;
   width:125px;
@@ -74,7 +74,7 @@
   vertical-align: middle;
 }
 
-#gamepiece4{
+#gamepiece5{
   margin:0 auto;
   background-color: yellow;
   width:150px;
@@ -87,7 +87,7 @@
   vertical-align: middle;
 }
 
-#gamepiece5{
+#gamepiece6{
   margin:0 auto;
   background-color: purple;
   width:175px;
@@ -100,7 +100,7 @@
   vertical-align: middle;
 }
 
-#gamepiece6{
+#gamepiece7{
   margin:0 auto;
   background-color: red;
   width:200px;
@@ -113,7 +113,7 @@
   vertical-align: middle;
 }
 
-#gamepiece7{
+#gamepiece8{
   margin:0 auto;
   background-color: gold;
   width:225px;
