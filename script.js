@@ -1,6 +1,7 @@
-var tower1 = [1,2,3,4,5,6,7,8];
-var tower2 = [];
-var tower3 = [];
+var winningtower = [1,2,3,4,5,6,7,8];
+var tower1 = [2,3,4,5,6,7,8,9];
+var tower2 = [1];
+var tower3 = [1];
 
 drawTower1 = function (){
 for (var each in tower1){
@@ -22,9 +23,32 @@ drawTower1();
 let pieceinmotion = undefined;
 
 interactwithtower1 = function(){
+    var temparray=tower1.slice(0);
+
+    if(pieceinmotion === undefined){
+    pieceinmotion = tower1.shift();
+    $(this).children().remove();
+    }
+    else if(tower1[0]=== 1){
+      tower1.unshift(pieceinmotion);
+      pieceinmotion=undefined;
+      $(this).children().remove();
+    }
+    else if(pieceinmotion<tower1[0]){
+      tower1.unshift(pieceinmotion);
+      pieceinmotion=undefined;
+      $(this).children().remove();
+    }
+    else{
+      $(this).children().remove();
+    }
+checkWinCondition();
+drawTower1();
+};
+/*
+interactwithtower1 = function(){
 if(pieceinmotion === undefined){
 pieceinmotion = tower1.shift();
-/*$('#gamepiece0').remove();*/
 $(this).children().remove();
 }
 else if(pieceinmotion != undefined){
@@ -32,22 +56,59 @@ else if(pieceinmotion != undefined){
   tower1.unshift(pieceinmotion);
   pieceinmotion=undefined;
 }
+
 drawTower1();
 };
-
+*/
 interactwithtower2 = function(){
-  if(pieceinmotion ==  undefined){
-  pieceinmotion = tower2.shift();
-  $(this).children().remove();
-  }
-  else if(pieceinmotion != undefined){
-    tower2.unshift(pieceinmotion);
-    pieceinmotion=undefined;
+    var temparray=tower2.slice(0);
+
+    if(pieceinmotion === undefined){
+    pieceinmotion = tower2.shift();
     $(this).children().remove();
-  }
+    }
+    else if(tower2[0]=== 1){
+      tower2.unshift(pieceinmotion);
+      pieceinmotion=undefined;
+      $(this).children().remove();
+    }
+    else if(pieceinmotion<tower2[0]){
+      tower2.unshift(pieceinmotion);
+      pieceinmotion=undefined;
+      $(this).children().remove();
+    }
+    else{
+      $(this).children().remove();
+    }
+checkWinCondition();
 redotower2();
 };
 
+interactwithtower3 = function(){
+    var temparray=tower3.slice(0);
+
+    if(pieceinmotion === undefined){
+    pieceinmotion = tower3.shift();
+    $(this).children().remove();
+    }
+    else if(tower3[0]=== 1){
+      tower3.unshift(pieceinmotion);
+      pieceinmotion=undefined;
+      $(this).children().remove();
+    }
+    else if(pieceinmotion<tower3[0]){
+      tower3.unshift(pieceinmotion);
+      pieceinmotion=undefined;
+      $(this).children().remove();
+    }
+    else{
+      $(this).children().remove();
+    }
+checkWinCondition();
+redotower3();
+};
+
+/*
 interactwithtower3 = function(){
   if(pieceinmotion ==  undefined){
   pieceinmotion = tower3.shift();
@@ -58,40 +119,19 @@ interactwithtower3 = function(){
     pieceinmotion=undefined;
     $(this).children().remove();
   }
+checkWinCondition();
 redotower3();
 };
-/*
-interactwithtower1 = function(){
-  pieceinmotion=tower1[0];
-  $('#gamepiece0').remove();
-  tower1.shift();
-};
-addstoredvalueto1 = function(){
-  tower1.unshift(pieceinmotion);
-  pieceinmotion=undefined;
-};
-
-interactwithtower2 = function(){
-  tower2.unshift(pieceinmotion);
-  pieceinmotion=null;
-  redotower2();
-};
-interactwithtower3 = function(){
-  tower3.unshift(pieceinmotion);
-  pieceinmotion=undefined;
-  redotower3();
-};
-
 */
-
-
 $('.tower1').on("click", interactwithtower1);
 $('.tower2').on("click", interactwithtower2);
 $('.tower3').on("click", interactwithtower3);
 
-while(tower2===[0,1,2,3,4,5,6,7]){
-  console.log("You Won!");
+checkWinCondition = function(){
+if(tower2.length === winningtower.length){
+  alert("You Won!");
 }
-while(tower3===[0,1,2,3,4,5,6,7]){
-  console.log("You Won!");
+else if(tower3.length===winningtower.length){
+  alert("You Won!");
+}
 }
