@@ -1,7 +1,5 @@
 body{
-
   background-color: black;
-
 }
 h1{
   margin:0 auto;
@@ -16,6 +14,7 @@ h1{
 h1:hover{
   animation: shake .5s ease-in-out;
 }
+
 h2{
   margin-top: 40px;
   color:white;
@@ -23,14 +22,11 @@ h2{
   font-size:20px;
   font-family: 'Nothing You Could Do', cursive;
 }
-span{
 
-}
 .alltowers{
   display:flex;
   background-image: url(http://l.rgbimg.com/cache1ntFHn/users/o/oe/oeildenuit/600/2dRRfSu.jpg);
   background-size: cover;
-  /*background-color: #CBCCD1;*/
   width:800px;
   margin:20px auto;
   border:solid grey 10px;
@@ -43,54 +39,15 @@ span{
 .alltowers:hover{
   transform: scale(1.02);
   opacity:1;
-}
-@keyframes shake {
-  0% {
-    transform: translateX(0);
-  }
-
-  20% {
-    transform: translateX(-10px);
-  }
-
-  40% {
-    transform: translateX(10px);
-  }
-
-  60% {
-    transform: translateX(-10px);
-  }
-
-  80% {
-    transform: translateX(10px);
-  }
-}
-.alltowers:hover{
-  outline: 35px dashed #313035;/*#E4E981*/
-  box-shadow: 0 0 0 24px #565656;/*#3B374D*/
+  outline: 35px dashed #313035;
+  box-shadow: 0 0 0 24px #565656;
   animation: shake .8s ease-in-out;
-
-}
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-
-  50% {
-    transform: scale(1.1);
-  }
-
-  100% {
-    transform: scale(1);
-  }
 }
 
 .tower1, .tower2, .tower3{
-  /*display:inline-block;;*/
   display:flex;
   flex-direction: column;
   justify-content: flex-end;
-  /*justify-content: flex-start;*/
   width: 225px;
   height: 300px;
   margin: 0px 20px;
@@ -106,10 +63,9 @@ span{
                               transparent 100%);
 }
 
-#gamepiece1{
+#gamepiece1,#gamepiece2,#gamepiece3,#gamepiece4,#gamepiece5,#gamepiece6,#gamepiece7,#gamepiece8{
   margin:0 auto;
   background-color: #5682AD;
-  width:50px;
   height:30px;
   position:;
   display:flex;
@@ -117,116 +73,39 @@ span{
   justify-content:center;
   vertical-align: middle;
   border-radius:10px;
+}
+#gamepiece1{
+  width:50px;
   background-image: url(http://res.freestockphotos.biz/pictures/11/11554-a-wood-grain-texture-pv.jpg);
 }
-
 #gamepiece2{
-  margin:0 auto;
-  background-color: #ADAD56;
   width:75px;
-  height:30px;
-  position:;
-  display:flex;
-  flex-direction: column;
-  justify-content:center;
-  vertical-align: middle;
-  border-radius:10px;
   background-image: url(http://res.freestockphotos.biz/pictures/11/11541-a-wood-grain-texture-pv.jpg);
 }
-
 #gamepiece3{
-  margin:0 auto;
-  background-color: #AD8256;
   width:100px;
-  height:30px;
-  position:;
-  display:flex;
-  flex-direction: column;
-  justify-content:center;
-  vertical-align: middle;
-  border-radius:10px;
   background-image: url(http://res.freestockphotos.biz/pictures/11/11544-a-wood-grain-texture-pv.jpg);
 }
-
 #gamepiece4{
-  margin:0 auto;
-  background-color: #336A6A;
   width:125px;
-  height:30px;
-  position:;
-  display:flex;
-  flex-direction: column;
-  justify-content:center;
-  vertical-align: middle;
-  border-radius:10px;
   background-image: url(http://res.freestockphotos.biz/pictures/11/11535-a-wood-grain-texture-pv.jpg);
 }
-
 #gamepiece5{
-  margin:0 auto;
-  background-color: #6DC7C9;
   width:150px;
-  height:30px;
-  position:;
-  display:flex;
-  flex-direction: column;
-  justify-content:center;
-  vertical-align: middle;
-  border-radius:10px;
   background-image: url(https://s-media-cache-ak0.pinimg.com/564x/dc/b9/f5/dcb9f5e9468453f6283c65778a72669f.jpg)
 }
-
 #gamepiece6{
-  margin:0 auto;
   background-color: #AD5656;
   width:175px;
-  height:30px;
-  position:;
-  display:flex;
-  flex-direction: column;
-  justify-content:center;
-  vertical-align: middle;
-  border-radius:10px;
   background-image: url(http://res.freestockphotos.biz/pictures/11/11546-a-wood-grain-texture-pv.jpg)
 }
-
 #gamepiece7{
-  margin:0 auto;
   background-color: #E1D274;
   width:200px;
-  height:30px;
-  position:;
-  display:flex;
-  flex-direction: column;
-  justify-content:center;
-  vertical-align: middle;
-  border-radius:10px;
   background-image: url(https://media.freestocktextures.com/cache/4d/e6/4de6261b970deb804e557b9bb1dd44ad.jpg)
 }
-
 #gamepiece8{
-  margin:0 auto;
   background-color: #AD5682;
   width:225px;
-  height:30px;
-  position:;
-  display:flex;
-  flex-direction: column;
-  justify-content:center;
-  vertical-align: middle;
-  border-radius:10px;
   background-image: url(http://res.freestockphotos.biz/pictures/11/11551-a-wood-grain-texture-pv.jpg)
-}
-
-
-/*
-span {
-  display:flex;
-
-  margin:10px 10px;
-
-  height:20px:
-  width:50px;
-  border:solid black 1px;
-
 }

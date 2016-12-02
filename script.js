@@ -2,31 +2,24 @@ var winningtower = [1,2,3,4,5,6,7,8];
 var tower1 = [1,2,3,4,5,6,7,8];
 var tower2 = [];
 var tower3 = [];
-
+var pieceinmotion = undefined;
 var audio = $("#mysoundclip")[0];
 
 
 drawTower1 = function (){
 for (var each in tower1){
 $('.tower1').append("<div class ='animated shake' id=gamepiece"+ tower1[each] + "></div>");}
-
-};
-
-redotower2 = function(){
+  };
+drawTower2 = function(){
 for (var each in tower2){
 $('.tower2').append("<div class ='animated shake' id=gamepiece"+ tower2[each] + "></div>");}
-
-};
-
-redotower3 = function(){
+  };
+drawTower3 = function(){
 for (var each in tower3){
 $('.tower3').append("<div class ='animated shake' id=gamepiece" + tower3[each] + "></div>");}
-
-};
+  };
 
 drawTower1();
-
-let pieceinmotion = undefined;
 
 interactwithtower1 = function(){
     var temparray=tower1.slice(0);
@@ -35,7 +28,7 @@ interactwithtower1 = function(){
     pieceinmotion = tower1.shift();
     $(this).children().remove();
     }
-    else if(tower1[0]=== undefined){
+    else if(tower1[0] === undefined){
       tower1.unshift(pieceinmotion);
       pieceinmotion=undefined;
       $(this).children().remove();
@@ -50,7 +43,6 @@ interactwithtower1 = function(){
     else{
       $(this).children().remove();
     }
-
 checkWinCondition();
 drawTower1();
 };
@@ -62,7 +54,7 @@ interactwithtower2 = function(){
     pieceinmotion = tower2.shift();
     $(this).children().remove();
     }
-    else if(tower2[0]=== undefined){
+    else if(tower2[0] === undefined){
       tower2.unshift(pieceinmotion);
       pieceinmotion=undefined;
       $(this).children().remove();
@@ -77,9 +69,8 @@ interactwithtower2 = function(){
     else{
       $(this).children().remove();
     }
-
 checkWinCondition();
-redotower2();
+drawTower2();
 };
 
 interactwithtower3 = function(){
@@ -89,7 +80,7 @@ interactwithtower3 = function(){
     pieceinmotion = tower3.shift();
     $(this).children().remove();
     }
-    else if(tower3[0]=== undefined){
+    else if(tower3[0] === undefined){
       tower3.unshift(pieceinmotion);
       pieceinmotion=undefined;
       $(this).children().remove();
@@ -104,9 +95,8 @@ interactwithtower3 = function(){
     else{
       $(this).children().remove();
     }
-
 checkWinCondition();
-redotower3();
+drawTower3();
 };
 
 $('.tower1').on("click", interactwithtower1);
