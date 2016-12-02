@@ -1,8 +1,88 @@
+body{
+
+  background-color: black;
+
+}
+h1{
+  margin:0 auto;
+  color:white;
+  text-align:center;
+  font-family: 'Aladin', cursive;
+  font-size:70px;
+  width:200px;
+  margin-bottom: 40px;
+  animation: pulse 5s ease infinite;
+}
+h1:hover{
+  animation: shake .5s ease-in-out;
+}
+h2{
+  margin-top: 40px;
+  color:white;
+  text-align: center;
+  font-size:20px;
+  font-family: 'Nothing You Could Do', cursive;
+}
+span{
+
+}
 .alltowers{
   display:flex;
-  background-color: #0099cc;
+  background-image: url(http://l.rgbimg.com/cache1ntFHn/users/o/oe/oeildenuit/600/2dRRfSu.jpg);
+  background-size: cover;
+  /*background-color: #CBCCD1;*/
   width:800px;
-  
+  margin:20px auto;
+  border:solid grey 10px;
+
+  outline: 0px dashed #9C0E1E;
+  box-shadow: 0 0 0 2px #E4E981;
+  transition: all .8s;
+  opacity:.4;
+}
+.alltowers:hover{
+  transform: scale(1.02);
+  opacity:1;
+}
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+
+  20% {
+    transform: translateX(-10px);
+  }
+
+  40% {
+    transform: translateX(10px);
+  }
+
+  60% {
+    transform: translateX(-10px);
+  }
+
+  80% {
+    transform: translateX(10px);
+  }
+}
+.alltowers:hover{
+  outline: 35px dashed #313035;/*#E4E981*/
+  box-shadow: 0 0 0 24px #565656;/*#3B374D*/
+  animation: shake .8s ease-in-out;
+
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
 
 .tower1, .tower2, .tower3{
@@ -15,118 +95,127 @@
   height: 300px;
   margin: 0px 20px;
   position:relative;
-  border-bottom:solid brown 10px;
+  border-bottom:solid black 55px;
+  border-radius:50px;
   background: linear-gradient(to right,
                               transparent 0%,
-                              transparent calc(50% - 2px),
+                              transparent calc(50% - 8px),
                               black calc(50% - 0.8px),
                               black calc(50% + 0.8px),
-                              transparent calc(50% + 2px),
+                              transparent calc(50% + 8px),
                               transparent 100%);
 }
 
 #gamepiece2{
   margin:0 auto;
-  background-color: black;
+  background-color: #5682AD;
   width:50px;
-  height:20px;
+  height:30px;
   position:;
   display:flex;
   flex-direction: column;
-
   justify-content:center;
   vertical-align: middle;
+  border-radius:10px;
+  background-image: url(http://res.freestockphotos.biz/pictures/11/11554-a-wood-grain-texture-pv.jpg);
 }
 
 #gamepiece3{
   margin:0 auto;
-  background-color: blue;
+  background-color: #ADAD56;
   width:75px;
-  height:20px;
+  height:30px;
   position:;
   display:flex;
   flex-direction: column;
-
   justify-content:center;
   vertical-align: middle;
+  border-radius:10px;
+  background-image: url(http://res.freestockphotos.biz/pictures/11/11541-a-wood-grain-texture-pv.jpg);
 }
 
 #gamepiece4{
   margin:0 auto;
-  background-color: grey;
+  background-color: #AD8256;
   width:100px;
-  height:20px;
+  height:30px;
   position:;
   display:flex;
   flex-direction: column;
-
   justify-content:center;
   vertical-align: middle;
+  border-radius:10px;
+  background-image: url(http://res.freestockphotos.biz/pictures/11/11544-a-wood-grain-texture-pv.jpg);
 }
 
 #gamepiece5{
   margin:0 auto;
-  background-color: green;
+  background-color: #336A6A;
   width:125px;
-  height:20px;
+  height:30px;
   position:;
   display:flex;
   flex-direction: column;
-
   justify-content:center;
   vertical-align: middle;
+  border-radius:10px;
+  background-image: url(http://res.freestockphotos.biz/pictures/11/11535-a-wood-grain-texture-pv.jpg);
 }
 
 #gamepiece6{
   margin:0 auto;
-  background-color: yellow;
+  background-color: #6DC7C9;
   width:150px;
-  height:20px;
+  height:30px;
   position:;
   display:flex;
   flex-direction: column;
-
   justify-content:center;
   vertical-align: middle;
+  border-radius:10px;
+  background-image: url(https://s-media-cache-ak0.pinimg.com/564x/dc/b9/f5/dcb9f5e9468453f6283c65778a72669f.jpg)
 }
 
 #gamepiece7{
   margin:0 auto;
-  background-color: purple;
+  background-color: #AD5656;
   width:175px;
-  height:20px;
+  height:30px;
   position:;
   display:flex;
   flex-direction: column;
-
   justify-content:center;
   vertical-align: middle;
+  border-radius:10px;
+  background-image: url(http://res.freestockphotos.biz/pictures/11/11546-a-wood-grain-texture-pv.jpg)
 }
 
 #gamepiece8{
   margin:0 auto;
-  background-color: red;
+  background-color: #E1D274;
   width:200px;
-  height:20px;
+  height:30px;
   position:;
   display:flex;
   flex-direction: column;
-
   justify-content:center;
   vertical-align: middle;
+  border-radius:10px;
+  background-image: url(https://media.freestocktextures.com/cache/4d/e6/4de6261b970deb804e557b9bb1dd44ad.jpg)
 }
 
 #gamepiece9{
   margin:0 auto;
-  background-color: gold;
+  background-color: #AD5682;
   width:225px;
-  height:20px;
+  height:30px;
   position:;
   display:flex;
   flex-direction: column;
-
   justify-content:center;
   vertical-align: middle;
+  border-radius:10px;
+  background-image: url(http://res.freestockphotos.biz/pictures/11/11551-a-wood-grain-texture-pv.jpg)
 }
 
 
