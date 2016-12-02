@@ -35,7 +35,7 @@ interactwithtower1 = function(){
     pieceinmotion = tower1.shift();
     $(this).children().remove();
     }
-    else if(tower1[0]=== 1){
+    else if(tower1[0]=== undefined){
       tower1.unshift(pieceinmotion);
       pieceinmotion=undefined;
       $(this).children().remove();
@@ -62,7 +62,7 @@ interactwithtower2 = function(){
     pieceinmotion = tower2.shift();
     $(this).children().remove();
     }
-    else if(tower2[0]=== 1){
+    else if(tower2[0]=== undefined){
       tower2.unshift(pieceinmotion);
       pieceinmotion=undefined;
       $(this).children().remove();
@@ -89,7 +89,7 @@ interactwithtower3 = function(){
     pieceinmotion = tower3.shift();
     $(this).children().remove();
     }
-    else if(tower3[0]=== 1){
+    else if(tower3[0]=== undefined){
       tower3.unshift(pieceinmotion);
       pieceinmotion=undefined;
       $(this).children().remove();
