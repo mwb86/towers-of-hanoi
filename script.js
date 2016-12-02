@@ -1,5 +1,5 @@
 var winningtower = [1,2,3,4,5,6,7,8];
-var tower1 = [2,3,4,5,6,7,8,9];
+var tower1 = [1,2,3,4,5,6,7,8];
 var tower2 = [];
 var tower3 = [];
 
