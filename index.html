@@ -12,11 +12,22 @@
     <audio id="mysoundclip" preload="auto">
     <source src="sticks.mp3"></audio>
     <h1>Tower of Hanoi</h1>
-<div class ="alltowers">
+    <div class="dropdown">
+      <button class="dropbtn">New Game</button>
+      <div class="dropdown-content">
+        <a href="#" id="4">4 Discs(min moves = 15)</a>
+        <a href="#" id="5">5 Discs(min moves = 31) </a>
+        <a href="#" id="6">6 discs(min moves = 63)</a>
+        <a href="#" id="7">7 discs(min moves = 127)</a>
+        <a href="#" id="8">8 discs(min moves = 255)</a>
+      </div>
+    </div>
+<div id ="alltowers">
     <div class = "tower1"></div>
     <div class = "tower2"></div>
     <div class = "tower3"></div>
 </div>
+
 <h2 class ="animated once fadeIn">Created<br> by<br> <span>Mason Brown<span><h2>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src = "script.js"></script>

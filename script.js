@@ -1,5 +1,5 @@
-var winningtower = [1, 2, 3, 4, 5, 6, 7, 8];
-var tower1 = [1, 2, 3, 4, 5, 6, 7, 8];
+var winningtower = [];
+var tower1 = [];
 var tower2 = [];
 var tower3 = [];
 var pieceinmotion = undefined;
@@ -21,11 +21,7 @@ drawTower3 = function() {
     }
 };
 
-drawTower1();
-
 interactwithtower1 = function() {
-    var temparray = tower1.slice(0);
-
     if (pieceinmotion === undefined) {
         pieceinmotion = tower1.shift();
         $(this).children().remove();
@@ -46,8 +42,6 @@ interactwithtower1 = function() {
 };
 
 interactwithtower2 = function() {
-    var temparray = tower2.slice(0);
-
     if (pieceinmotion === undefined) {
         pieceinmotion = tower2.shift();
         $(this).children().remove();
@@ -69,8 +63,6 @@ interactwithtower2 = function() {
 };
 
 interactwithtower3 = function() {
-    var temparray = tower3.slice(0);
-
     if (pieceinmotion === undefined) {
         pieceinmotion = tower3.shift();
         $(this).children().remove();
@@ -102,3 +94,18 @@ checkWinCondition = function() {
         alert("You Won!");
     }
 };
+
+changeDifficulty = function() {
+    tower1 = [];
+    tower2 = [];
+    tower3 = [];
+    $('#alltowers').children().children().remove();
+    for (i = 0; i < this.id; i++) {
+        tower1.push(i + 1);
+        winningtower.push(i + 1);
+    }
+    drawTower1();
+    drawTower2();
+    drawTower3();
+};
+$('.dropdown-content').children().on("click", changeDifficulty);
