@@ -99,6 +99,7 @@ changeDifficulty = function() {
     tower1 = [];
     tower2 = [];
     tower3 = [];
+    winningtower=[];
     $('#alltowers').children().children().remove();
     for (i = 0; i < this.id; i++) {
         tower1.push(i + 1);
