@@ -1,10 +1,9 @@
 <h1>_Tower of Hanoi_</h1>
 "The Tower of Hanoi (also called the Tower of Brahma or Lucas' Tower, and sometimes pluralized) is a mathematical game or puzzle. It consists of three rods, and a number of disks of different sizes which can slide onto any rod.....The puzzle was invented by the French mathematician Édouard Lucas in 1883. There is a story about an Indian temple in Kashi Vishwanath which contains a large room with three time-worn posts in it surrounded by 64 golden disks. Brahmin priests, acting out the command of an ancient prophecy, have been moving these disks, in accordance with the immutable rules of the Brahma, since that time. The puzzle is therefore also known as the Tower of Brahma puzzle. According to the legend, when the last move of the puzzle will be completed, the world will end. It is not clear whether Lucas invented this legend or was inspired by it."
 https://en.wikipedia.org/wiki/Tower_of_Hanoi
-
-
-
-Play my verion of the game here https://mwb86.github.io/towers-of-hanoi/#
+<br>
+<h2>_Play my verion of the game here:_</h2> https://mwb86.github.io/towers-of-hanoi/#
+<br>
 
 
 To play this game you go to the New Game menu and select the number of discs. 4 discs is the easiest setting. Additional discs will make the game exponentially longer. You click on the first tower of discs and it removes the top one. You then place this piece by clicking on one of the other towers. It is against the rules to place this piece on top of a piece that is smaller. Win the game by moving the whole set of discs to one of the other towers.
